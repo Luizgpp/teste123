@@ -8,11 +8,10 @@
 					<div class="col-lg-3 col-md-3 col-sm-4">
 						<div class="footer-widget">
 							<img src="img/logo/logo.png" alt="" />
-							<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. .</p>
+							<p>A melhor opção de passeios e viagem de Campos do Jordão . </p>
 							<div class="widget-icon">
 								<a href="#"><i class="fa fa-facebook"></i></a>
-								<a href="#"><i class="fa fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-linkedin"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>								
 								<a href="#"><i class="fa fa-google-plus"></i></a>
 							</div>
 						</div>
@@ -21,47 +20,30 @@
 					<!-- footer-widget start -->
 					<div class="col-lg-3 col-md-3 hidden-sm">
 						<div class="footer-widget">
-							<h3>Our services</h3>
+							<h3>Nossos serviços</h3>
 							<ul class="footer-menu">
-								<li><a href="#">Shipping & Returns</a></li>
-								<li><a href="#">Secure Shopping</a></li>
-								<li><a href="#">International Shipping</a></li>
-								<li><a href="#">Affiliates</a></li>
-								<li><a href="#">Contact</a></li>
+								<li><a href="#">Passeios</a></li>
+								<li><a href="#">Receptivos</a></li>
+								<li><a href="#">City tour</a></li>
+								<li><a href="#">Eventos</a></li>
+								<li><a href="#">Translado</a></li>
 							</ul>
 						</div>
 					</div>
 					<!-- footer-widget end -->
-					<!-- footer-widget start -->
+					
 					<div class="col-lg-3 col-md-3 col-sm-4">
 						<div class="footer-widget">
-							<h3>Our services</h3>
-							<ul class="footer-menu">
-								<li><a href="#">Shipping & Returns</a></li>
-								<li><a href="#">Secure Shopping</a></li>
-								<li><a href="#">International Shipping</a></li>
-								<li><a href="#">Affiliates</a></li>
-								<li><a href="#">Contact</a></li>
-							</ul>
-						</div>
-					</div>
-					<!-- footer-widget end -->
-					<!-- footer-widget start -->
-					<div class="col-lg-3 col-md-3 col-sm-4">
-						<div class="footer-widget">
-							<h3>CONTACT US</h3>
+							<h3>Contato</h3>
 							<ul class="footer-contact">
-								<li>
-									<i class="fa fa-map-marker"> </i>
-									Addresss: 123 Pall Mall, London England
-								</li>
+								
 								<li>
 									<i class="fa fa-envelope"> </i>	
-									Email: admin@themepure.net
+									Email: contatotoptour@toptour.net
 								</li>
 								<li>
 									<i class="fa fa-phone"> </i>
-									Phone: +8801912 199981  
+									Telefone: (12) 9 9808-0999
 								</li>
 							</ul>
 						</div>
@@ -77,7 +59,7 @@
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-6">
 						<div class="copyright">
-							<p>Copyright © <a href="#">ThemePure</a>. All Rights Reserved</p>
+								<p>Copyright ©  2017 <a href="#">01 sistemas</a>. Todos os direitos reservados
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-6">
