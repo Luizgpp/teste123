@@ -6,24 +6,19 @@
 					<!-- header-top-left start -->
 					<div class="col-lg-6 col-md-6 col-sm-7">
 						<div class="header-top-left">
-							<div class="top-message">Default welcome message</div>
-							<div class="phone-number"> Call support free: <span>123 456  789</span></div>
+							<div class="top-message">Seja bem vindo a Campos Tour</div>
+							<div class="phone-number"> Tire suas duvidas <span>(12) 9 9999 9999</span></div>
 						</div>
 					</div>
 					<!-- header-top-left end -->
 					<!-- header-top-right start -->
 					<div class="col-lg-6 col-md-6 col-sm-5">
 						<div class="header-top-right">
-							<div class="lang-select">
-								<ul>
-									<li><a href="#"><img src="img/en.png" alt="" /></a></li>
-								</ul>
-							</div>
 							<div class="top-menu">
 								<ul>
-									<li><a href="my-account.html">My Account</a></li>
-									<li><a href="wishlist.html">My Wishlist</a></li>
-									<li><a href="cart.html">Cart</a></li>
+									<li><a href="my-account.html">Minha Conta</a></li>
+									<li><a href="wishlist.html">Lista de Desejos</a></li>
+									<li><a href="cart.html">Carrinho</a></li>
 									<li><a href="#">Login</a></li>
 								</ul>
 							</div>
@@ -49,7 +44,7 @@
 						<!-- cart-total start -->
 						<div class="cart-total">
 							<ul>
-								<li><a href="cart.html"><span class="cart-icon"><i class="fa fa-shopping-cart"></i></span> <span class="cart-no">My cart: (2)</span></a>
+								<li><a href="cart.html"><span class="cart-icon"><i class="fa fa-shopping-cart"></i></span> <span class="cart-no">Carrinho: (2)</span></a>
 									<div class="mini-cart-content">
 										<div class="cart-img-details">											
 											<div class="cart-img-photo">
@@ -89,7 +84,7 @@
 						<!-- header-search start -->
 						<div class="header-search">
 							<form action="#">
-								<input type="text" placeholder="Search product..." />
+								<input type="text" placeholder="Buscar Tour..." />
 								<button type="submit"><i class="fa fa-search"></i></button>
 							</form>
 						</div>
@@ -108,9 +103,9 @@
 							<nav>
 								<ul>
 									<li><a href="index.html">Home</a></li>
-									<li><a href="about-us.html">about</a></li>
-									<li><a href="blog.html">Blog</a></li>
-									<li><a href="shop.html">Shop</a>
+									<li><a href="about-us.html">Sobre</a></li>
+									{{--  <li><a href="blog.html">Blog</a></li>  --}}
+									<li><a href="shop.html">Pacotes</a>
 										<div class="mega-menu">											
 											<span>
 												<a href="#" class="mega-title">WOMEN CLOTH </a>
@@ -138,7 +133,7 @@
 											</span>
 										</div>									
 									</li>
-									<li><a href="#">Pages</a>
+									{{--  <li><a href="#">Pages</a>
 										<ul class="sub-menu">
 											<li><a href="about-us.html">about us</a></li>
 											<li><a href="contact.html">contact us</a></li>
@@ -153,9 +148,9 @@
 											<li><a href="my-account.html">my-account</a></li>
 											<li><a href="404.html">404 page</a></li>
 										</ul>									
-									</li>
-									<li><a href="shop.html">Footwear  </a></li>
-									<li><a href="contact.html">Contact</a></li>
+									</li>  --}}
+									{{--  <li><a href="shop.html">Footwear  </a></li>  --}}
+									<li><a href="contact.html">Contato</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -173,9 +168,9 @@
 							<nav id="dropdown">
 								<ul>
 									<li><a href="index.html">Home</a></li>
-									<li><a href="blog.html">blog</a></li>
-									<li><a href="shop.html">Shop</a></li>
-									<li><a href="#">Pages</a>
+									{{--  <li><a href="blog.html">blog</a></li>  --}}
+									<li><a href="shop.html">Pacotes</a></li>
+									{{--  <li><a href="#">Pages</a>
 										<ul>
 											<li><a href="about-us.html">about us</a></li>
 											<li><a href="contact.html">contact us</a></li>
@@ -190,8 +185,8 @@
 											<li><a href="my-account.html">my-account</a></li>
 											<li><a href="404.html">404 page</a></li>
 										</ul>
-									</li>
-									<li><a href="contact.html">Contact</a></li>
+									</li>  --}}
+									<li><a href="contact.html">Contato</a></li>
 								</ul>
 							</nav>
 						</div>					
