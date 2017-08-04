@@ -16,10 +16,25 @@
 						<div class="header-top-right">
 							<div class="top-menu">
 								<ul>
+									@if (Auth::guest())
+										<li><a href="{{ route('login') }}">Login</a></li>
+									@else
 									<li><a href="my-account.html">Minha Conta</a></li>
 									<li><a href="wishlist.html">Lista de Desejos</a></li>
 									<li><a href="cart.html">Carrinho</a></li>
-									<li><a href="#">Login</a></li>
+										{{--  <li>{{ Auth::user()->name }}</li>  --}}
+										<li>
+											<a href="{{ route('logout') }}"
+												onclick="event.preventDefault();
+														document.getElementById('logout-form').submit();">
+												Logout
+											</a>
+
+											<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+												{{ csrf_field() }}
+											</form>
+										</li>
+									@endif
 								</ul>
 							</div>
 						</div>
