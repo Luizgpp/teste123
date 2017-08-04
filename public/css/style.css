@@ -4273,9 +4273,17 @@ p.checkout-coupon input[type=submit] {
     display: none;
 }
 
+.img-slide-1 {
+    background-image: url(/images/5a.jpg);
+}
+
+.img-slide-2 {
+    background-image: url(/images/4a.jpg);
+}
+
 .texto-transp {
+    background-size: cover;
+    background-position: center center;
     -webkit-text-fill-color: transparent;
-    background: -webkit-linear-gradient(transparent, transparent), url(/images/5a.jpg) repeat 0px 0px;
-    background: -o-linear-gradient(transparent, transparent);
     -webkit-background-clip: text;
 }
