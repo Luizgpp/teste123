@@ -18,12 +18,11 @@
 								<ul>
 									@if (Auth::guest())
 										<li><a href="{{ route('login') }}">Login</a></li>
+										<li><a href="/carrinho">Carrinho</a></li>
 									@else
 									<li><a href="my-account.html">Minha Conta</a></li>
-									<li><a href="wishlist.html">Lista de Desejos</a></li>
-									<li><a href="/carrinho">Carrinho</a></li>	
-									<li><a href="cart.html">Carrinho</a></li>
-										{{--  <li>{{ Auth::user()->name }}</li>  --}}
+									<li><a href="/desejos">Lista de Desejos</a></li>									
+										 {{--  <li>{{ Auth::user()->name }}</li>   --}}
 										<li>
 											<a href="{{ route('logout') }}"
 												onclick="event.preventDefault();
@@ -56,10 +55,11 @@
 					</div>
 					<!-- logo end -->
 					<div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
+					@if (Auth::guest())
 						<!-- cart-total start -->
 						<div class="cart-total">
 							<ul>
-								<li><a href="cart.html"><span class="cart-icon"><i class="fa fa-shopping-cart"></i></span> <span class="cart-no">Carrinho: (2)</span></a>
+								<li><a href="/carrinho"><span class="cart-icon"><i class="fa fa-shopping-cart"></i></span> <span class="cart-no">Carrinho: (2)</span></a>
 									<div class="mini-cart-content">
 										<div class="cart-img-details">											
 											<div class="cart-img-photo">
@@ -96,6 +96,7 @@
 							</ul>
 						</div>
 						<!-- cart-total end -->
+						@endif
 						<!-- header-search start -->
 						<div class="header-search">
 							<form action="#">
@@ -117,8 +118,8 @@
 						<div class="mainmenu">
 							<nav>
 								<ul>
-									<li><a href="index.html">Home</a></li>
-									<li><a href="about-us.html">Sobre</a></li>
+									<li><a href="/">Home</a></li>
+									<li><a href="/sobre">Sobre</a></li>
 									{{--  <li><a href="blog.html">Blog</a></li>  --}}
 									<li><a href="/pacote">Pacotes</a>
 										<div class="mega-menu">											
@@ -165,7 +166,7 @@
 										</ul>									
 									</li>  --}}
 									{{--  <li><a href="shop.html">Footwear  </a></li>  --}}
-									<li><a href="contact.html">Contato</a></li>
+									<li><a href="/contato">Contato</a></li>
 								</ul>
 							</nav>
 						</div>

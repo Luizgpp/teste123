@@ -1,4 +1,4 @@
-@extends('main')
+@extends('main1')
 @section('title','pacote')
 @section('content')
 	<!-- shop-header-area start -->	
