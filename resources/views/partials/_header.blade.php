@@ -18,11 +18,11 @@
 								<ul>
 									@if (Auth::guest())
 										<li><a href="{{ route('login') }}">Login</a></li>
+										<li><a href="{{ route('register') }}">Registrar</a></li>
 									@else
 									<li><a href="my-account.html">Minha Conta</a></li>
 									<li><a href="wishlist.html">Lista de Desejos</a></li>
-									<li><a href="cart.html">Carrinho</a></li>
-										{{--  <li>{{ Auth::user()->name }}</li>  --}}
+									<li><a href="cart.html">Carrinho</a></li>										 
 										<li>
 											<a href="{{ route('logout') }}"
 												onclick="event.preventDefault();
@@ -34,6 +34,7 @@
 												{{ csrf_field() }}
 											</form>
 										</li>
+										<li>Olá {{ Auth::user()->name }}</li>
 									@endif
 								</ul>
 							</div>
@@ -51,7 +52,7 @@
 					<!-- logo start -->
 					<div class="col-lg-6 col-md-6 col-sm-4 col-xs-12">
 						<div class="logo">
-							<a href="index.html"><img src="img/logo/logo.png" alt="" /></a>
+							<a href="/"><img src="img/logo/logo.png" alt="" /></a>
 						</div>
 					</div>
 					<!-- logo end -->
