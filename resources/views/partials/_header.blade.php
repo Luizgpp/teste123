@@ -22,14 +22,13 @@
 									@else
 									<li><a href="my-account.html">Minha Conta</a></li>
 									<li><a href="wishlist.html">Lista de Desejos</a></li>
-									<li><a href="cart.html">Carrinho</a></li>										 
+									<li><a href="/carrinho">Carrinho</a></li>
 										<li>
 											<a href="{{ route('logout') }}"
 												onclick="event.preventDefault();
 														document.getElementById('logout-form').submit();">
 												Logout
 											</a>
-
 											<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
 												{{ csrf_field() }}
 											</form>
@@ -121,7 +120,7 @@
 									<li><a href="index.html">Home</a></li>
 									<li><a href="about-us.html">Sobre</a></li>
 									{{--  <li><a href="blog.html">Blog</a></li>  --}}
-									<li><a href="shop.html">Pacotes</a>
+									<li><a href="/pacote">Pacotes</a>
 										<div class="mega-menu">											
 											<span>
 												<a href="#" class="mega-title">WOMEN CLOTH </a>
