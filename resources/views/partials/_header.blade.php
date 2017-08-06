@@ -17,17 +17,17 @@
 							<div class="top-menu">
 								<ul>
 									@if (Auth::guest())
-										<li><a href="{{ route('login') }}">Login</a></li>
+										<li><a href="{{ route('login') }}">Entrar</a></li>
 										<li><a href="{{ route('register') }}">Registrar</a></li>
 									@else
-									<li><a href="my-account.html">Minha Conta</a></li>
-									<li><a href="wishlist.html">Lista de Desejos</a></li>
+									<li><a href="/minhaConta">Minha Conta</a></li>
+									<li><a href="/desejos">Lista de Desejos</a></li>
 									<li><a href="/carrinho">Carrinho</a></li>
 										<li>
 											<a href="{{ route('logout') }}"
 												onclick="event.preventDefault();
 														document.getElementById('logout-form').submit();">
-												Logout
+												Sair
 											</a>
 											<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
 												{{ csrf_field() }}
@@ -51,7 +51,7 @@
 					<!-- logo start -->
 					<div class="col-lg-6 col-md-6 col-sm-4 col-xs-12">
 						<div class="logo">
-							<a href="/"><img src="img/logo/logo.png" alt="" /></a>
+							<a href="/"><img src="{{ asset('img/logo/logo.png') }}" alt="" /></a>
 						</div>
 					</div>
 					<!-- logo end -->
@@ -59,7 +59,7 @@
 						<!-- cart-total start -->
 						<div class="cart-total">
 							<ul>
-								<li><a href="cart.html"><span class="cart-icon"><i class="fa fa-shopping-cart"></i></span> <span class="cart-no">Carrinho: (2)</span></a>
+								<li><a href="/carrinho"><span class="cart-icon"><i class="fa fa-shopping-cart"></i></span> <span class="cart-no">Carrinho: (2)</span></a>
 									<div class="mini-cart-content">
 										<div class="cart-img-details">											
 											<div class="cart-img-photo">
@@ -89,7 +89,7 @@
 										<div class="cart-inner-bottom">
 											<p class="total">Subtotal: <span class="amount">£215.00</span></p>
 											<div class="clear"></div>
-											<p class="cart-button-top"><a href="checkout.html">Checkout</a></p>
+											<p class="cart-button-top"><a href="/checkout">finalizar compra</a></p>
 										</div>
 									</div>
 								</li>
@@ -116,9 +116,7 @@
 					<div class="col-md-12 col-sm-12">
 						<div class="mainmenu">
 							<nav>
-								<ul>
-									<li><a href="index.html">Home</a></li>
-									<li><a href="about-us.html">Sobre</a></li>
+								<ul>									
 									{{--  <li><a href="blog.html">Blog</a></li>  --}}
 									<li><a href="/pacote">Pacotes</a>
 										<div class="mega-menu">											
@@ -165,7 +163,8 @@
 										</ul>									
 									</li>  --}}
 									{{--  <li><a href="shop.html">Footwear  </a></li>  --}}
-									<li><a href="contact.html">Contato</a></li>
+									<li><a href="/contato">Contato</a></li>
+									<li><a href="/sobre">Sobre</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -182,9 +181,8 @@
 						<div class="mobile-menu">
 							<nav id="dropdown">
 								<ul>
-									<li><a href="index.html">Home</a></li>
 									{{--  <li><a href="blog.html">blog</a></li>  --}}
-									<li><a href="shop.html">Pacotes</a></li>
+									<li><a href="/pacote">Pacotes</a></li>
 									{{--  <li><a href="#">Pages</a>
 										<ul>
 											<li><a href="about-us.html">about us</a></li>
@@ -201,7 +199,8 @@
 											<li><a href="404.html">404 page</a></li>
 										</ul>
 									</li>  --}}
-									<li><a href="contact.html">Contato</a></li>
+									<li><a href="/contato">Contato</a></li>
+									<li><a href="/sobre">Sobre</a></li>									
 								</ul>
 							</nav>
 						</div>					

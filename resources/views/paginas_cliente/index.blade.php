@@ -26,7 +26,7 @@
                     </div>
                 </li>
 
-                 <li data-transition="random" data-slotamount="7" data-masterspeed="1000">
+                 {{--  <li data-transition="random" data-slotamount="7" data-masterspeed="1000">
                     <img src="{{asset('images/4.jpg')}}" alt="slide">
                     <div class="tp-caption large_black sfr" data-x="150" data-y="350" data-speed="1100" data-start="1100" data-easing="easeInOutBack" style="font-size: 18px; font-weight: bold; text-transform: uppercase; color: #FFF;">
                         fashion women’s
@@ -42,7 +42,7 @@
                     <div class="tp-caption lfb carousel-caption-inner" data-x="150" data-y="550" data-speed="1300" data-start="1700" data-easing="easeInOutBack" style=" font-size: 17px; font-weight: bold; text-transform: uppercase; color: #F3F3F3;">
                         <a href="#" class="s-btn" style="background:#EC4445;color: #ffffff;display: block;padding: 12px 28px;">shop now</a>
                     </div>
-                </li> 
+                </li>   --}}
             </ul>
         </div>
     </div>
@@ -2209,7 +2209,7 @@
     </div>
 </div>
 <!-- latest-blog-area end -->
-<!-- brand-area start -->
+{{--  <!-- brand-area start -->
 <div class="brand-area pad-60">
     <div class="container">
         <!-- section-heading start -->
@@ -2286,5 +2286,5 @@
         </div>
     </div>
 </div>
-<!-- brand-area end -->
+<!-- brand-area end -->  --}}
 @endsection

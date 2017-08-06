@@ -1,4 +1,67 @@
-@extends('layouts.app')
+@extends('main')
+
+@section('title','Login')
+@section('content')
+
+<!-- my-account-area start -->
+<div class="my-account-area entry-header-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-push-3">
+                @if (session('status'))
+                    <div class="alert alert-success">
+                        {{ session('status') }}
+                    </div>
+                @endif
+                <form method="POST" action="{{ route('password.request') }}">
+                {{ csrf_field() }}
+                <input type="hidden" name="token" value="{{ $token }}">
+                    <div class="form-fields ">
+                        <h2>Alterar Senha</h2>
+                        <p>
+                            <label for="email">Email <span class="required">*</span></label>
+                            {{--  <input class="{{ $errors->has('email') ? ' has-error' : '' }}" type="email" name="email" value="{{ $email or old('email') }}" required autofocus/>  --}}
+                            <input id="email" type="email" class="form-control" name="email" value="{{ $email or old('email') }}" required autofocus>
+                            @if ($errors->has('email'))
+                                <span class="help-block">
+                                    <strong>{{ $errors->first('email') }}</strong>
+                                </span>
+                            @endif
+                        </p>
+                        <p>
+                            <label for="password">Senha <span class="required">*</span></label>
+                            <input class="{{ $errors->has('password') ? ' has-error' : '' }}" type="password" name="password" required/>
+                            @if ($errors->has('password'))
+                                <span class="help-block">
+                                    <strong>{{ $errors->first('password') }}</strong>
+                                </span>
+                            @endif
+                        </p>
+                        <p>
+                            <label for="password-confirm">Confirmar Senha <span class="required">*</span></label>
+                            <input class="{{ $errors->has('password-confirm') ? ' has-error' : '' }}" type="password" name="password_confirmation" required/>
+                            @if ($errors->has('password_confirmation'))
+                                <span class="help-block">
+                                    <strong>{{ $errors->first('password_confirmation') }}</strong>
+                                </span>
+                            @endif
+                        </p>                        
+                    </div>
+                    <div class="form-action">
+                        <input type="submit" value="Salvar" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- my-account-area end -->
+
+@endsection    
+
+
+
+{{--  @extends('layouts.app')
 
 @section('content')
 <div class="container">
@@ -73,4 +136,4 @@
         </div>
     </div>
 </div>
-@endsection
+@endsection  --}}

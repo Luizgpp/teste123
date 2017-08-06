@@ -1,4 +1,4 @@
-@extends('main1')
+@extends('main')
 
 @section('title','Login')
 @section('content')
@@ -24,7 +24,7 @@
                 <form method="POST" action="{{ route('login') }}">
                 {{ csrf_field() }}
                     <div class="form-fields ">
-                        <h2>Login</h2>
+                        <h2>Entrar</h2>
                         <p>
                             <label for="email">Email <span class="required">*</span></label>
                             <input class="{{ $errors->has('email') ? ' has-error' : '' }}" type="email" name="email" value="{{ old('email') }}" required autofocus/>
@@ -35,7 +35,7 @@
                             @endif
                         </p>
                         <p>
-                            <label for="password">Password <span class="required">*</span></label>
+                            <label for="password">Senha <span class="required">*</span></label>
                             <input class="{{ $errors->has('password') ? ' has-error' : '' }}" type="password" name="password" required />
                             @if ($errors->has('password'))
                                 <span class="help-block">
@@ -47,7 +47,7 @@
                     <div class="form-action">
                         <p class=""><a href="{{ route('password.request') }}">Esqueceu sua Senha?</a></p>
                         <p class="lost_password"><a href="{{ route('register') }}">Ainda não possui cadastro?</a></p>
-                        <input type="submit" value="Login" />
+                        <input type="submit" value="Entrar" />
                         <label><input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}/>Lembrar-me </label>
                     </div>
                 </form>

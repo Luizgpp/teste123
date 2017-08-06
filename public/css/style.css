@@ -163,9 +163,9 @@ body {
 -------------------------------------*/
 
 header.header-home {
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    left: 0;
+    left: 0; */
     z-index: 99;
     width: 100%;
     background: rgba(19, 17, 15, 0.8) none repeat scroll 0 0;
@@ -652,7 +652,7 @@ p.cart-button-top {
 -------------------------------------*/
 
 .slider-wrap {
-    margin-bottom: 35px
+    margin-bottom: 35px;
 }
 
 
@@ -3223,13 +3223,15 @@ p.checkout-coupon input[type=submit] {
     display: none;
 }
 
-.checkout-area {}
+.checkout-area {
+    padding-top: 30px;
+}
 
 .checkbox-form {}
 
 .checkbox-form h3 {
     border-bottom: 1px solid #e5e5e5;
-    font-size: 30px;
+    font-size: 20px;
     margin: 0 0 20px;
     padding-bottom: 10px;
     text-transform: uppercase;
@@ -3262,7 +3264,8 @@ p.checkout-coupon input[type=submit] {
     width: 100%;
 }
 
-.country-select::before {
+
+/* .country-select::before {
     content: "";
     display: inline-block;
     font-family: fontawesome;
@@ -3270,7 +3273,7 @@ p.checkout-coupon input[type=submit] {
     position: absolute;
     right: 12px;
     top: 31px;
-}
+} */
 
 .checkout-form-list {
     margin-bottom: 30px;
